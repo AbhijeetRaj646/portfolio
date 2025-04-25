@@ -6,25 +6,23 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Sunil Yadav </span>
-            from <span className="purple"> Lucknow, India.</span>
+                  <p style={{ textAlign: "justify" }}>
+            Hi Everyone, I am <span className="purple">Abhijeet Raj </span>
+            from <span className="purple">Pune,India.</span>
             <br />
-            Software Engineer who loves to transform ideas into reality using
-            code.
+            DevOps Engineer who enjoys building reliable systems and automating processes.
             <br />
-            Motivated designer and developer with experience creating
-            custom websites with ReactJs, JavaScript, HTML5, CSS3. Shopify app using ReactJs, Javascript, Polaris, Graphql, nodejs, Koajs
-            and Mobile App using React-native.
+            Passionate about working with tools like Docker, Kubernetes, AWS, and Grafana  
+            to streamline development and deployment workflows.
             <br />
-            Apart from coding, some other activities that I love to do!
+            I have 2 years of experience in setting up CI/CD pipelines, monitoring systems,  
+            managing cloud infrastructure, and improving team productivity through automation.
+            <br />
+            Apart from DevOps, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
               <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
             </li>
             <li className="about-activity">
               <ImPointRight /> Travelling

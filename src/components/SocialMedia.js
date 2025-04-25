@@ -5,13 +5,15 @@ import {
 } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa";
+
 
 function SocialMedia() {
   return (
     <ul className="home-about-social-links">
       <li className="social-icons">
         <a
-          href="https://github.com/sunilyadav8"
+          href="https://github.com/AbhijeetRaj646"
           target="_blank"
           rel="noreferrer"
           className="icon-colour  home-social-icons"
@@ -21,7 +23,7 @@ function SocialMedia() {
       </li>
       <li className="social-icons">
         <a
-          href="https://www.linkedin.com/in/sunilkumaryadav84/"
+          href="http://www.linkedin.com/in/abhijeetraj646"
           target="_blank"
           rel="noreferrer"
           className="icon-colour  home-social-icons"
@@ -31,17 +33,17 @@ function SocialMedia() {
       </li>
       <li className="social-icons">
         <a
-          href="https://www.instagram.com/sunil.yadav84/"
+          href="https://medium.com/@yourusername"
           target="_blank"
           rel="noreferrer"
           className="icon-colour home-social-icons"
         >
-          <AiFillInstagram className="social-icon" />
+          <FaMedium className="social-icon" />
         </a>
       </li>
       <li className="social-icons">
         <a
-          href="mailto:sunilyadav8404@gmail.com"
+          href="mailto:abhijeetraj646@gmail.com"
           target="_blank"
           rel="noreferrer"
           className="icon-colour home-social-icons"

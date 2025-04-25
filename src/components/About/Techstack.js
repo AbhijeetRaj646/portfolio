@@ -1,24 +1,33 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import Rating from "react-rating"
+import { Row, Col, Badge } from "react-bootstrap";
 
-function Techstack(props) {
+const techStack = {
+  Frontend: ["React", "HTML", "CSS", "JavaScript"],
+  Backend: ["Node.js", "Express", "MongoDB"],
+  Tools: ["Git", "Docker", "Postman"],
+};
+
+function TechstackCategory({ category, items }) {
   return (
-    <>
-    <Row style={{ justifyContent: "left", paddingBottom: "10px" }}>
-       <Col className="skill-name" xs={4}>
-        {props.name}
-      </Col>
-      <Col xs={6}>
-        <Rating
-          readonly
-          start={0}
-          stop={5}
-          initialRating={props.initialRating}
-          className="rating"
-        />
+    <Row style={{ marginBottom: "20px" }}>
+      <Col xs={12}>
+        <h5 style={{ fontWeight: "bold", marginBottom: "10px" }}>{category}</h5>
+        {items.map((item, index) => (
+          <Badge key={index} pill bg="dark" className="me-2 mb-2">
+            {item}
+          </Badge>
+        ))}
       </Col>
     </Row>
+  );
+}
+
+function Techstack() {
+  return (
+    <>
+      {Object.entries(techStack).map(([category, items]) => (
+        <TechstackCategory key={category} category={category} items={items} />
+      ))}
     </>
   );
 }

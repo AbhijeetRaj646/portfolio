@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
+import { BsBriefcase } from "react-icons/bs";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -11,7 +12,6 @@ import {
 } from "react-icons/ai";
 
 import { MdDeveloperMode } from "react-icons/md";
-
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -26,7 +26,10 @@ function NavBar() {
     }
   }
 
-  window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   return (
     <Navbar
@@ -36,8 +39,8 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="http://www.logicstime.com/" target="_blank">
-          <MdDeveloperMode style={{ marginBottom: "2px" }} /> Logicstime.com
+        <Navbar.Brand as={Link} to="/">
+          <BsBriefcase  style={{ marginBottom: "2px" }} /> MyPortfolio
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -92,9 +95,9 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="http://www.logicstime.com/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/blog"
+                onClick={() => updateExpanded(false)}
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>

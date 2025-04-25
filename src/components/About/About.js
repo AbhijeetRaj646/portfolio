@@ -23,7 +23,7 @@ function About() {
             </h1>
             <Aboutcard />
           </Col>
-          <Col md={5} style={{ paddingBottom: "50px" }} className="about-img">
+          <Col md={5} style={{ paddingBottom: "150px" }} className="about-img">
             <img src={developer} alt="about" className="image-style" />
           </Col>
         </Row>
@@ -40,7 +40,7 @@ function About() {
               />
             ))}
           </Col>
-          <Col className="skill-wrapper">
+          {/* <Col className="skill-wrapper">
             <h1 className="project-heading">
               <strong className="purple">Tools</strong> I use
             </h1>
@@ -49,7 +49,7 @@ function About() {
                 <li>{tool}</li>
               </ul>
             ))}
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>

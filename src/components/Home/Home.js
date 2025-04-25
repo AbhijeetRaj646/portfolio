@@ -20,14 +20,14 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> Sunil Yadav</strong>
+                <strong className="main-name"> Abhijeet Raj</strong>
               </h1>
 
               <p className="heading-description blockquote">
-                I am passionate about using Javascript and Animation Libraries
-                to create awesome user experiences. With over five years of
-                experience developing web applications using the latest
-                front-end and back-end technologies.
+                I'm a DevOps Engineer with 2 years of experience in automating and managing cloud infrastructure on AWS. 
+                I specialize in tools like Kubernetes, Docker, Jenkins, Grafana, and Prometheus, 
+                and I focus on optimizing system performance and reliability. 
+                I thrive in Agile environments and am committed to delivering efficient, high-quality solutions.
               </p>
 
               <div className="heading-type">
