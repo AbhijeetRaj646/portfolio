@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us – Defence Academy</title>
+  <meta name="description" content="Contact Defence Academy for admissions, course queries, and counseling. WhatsApp, phone, and email available." />
+  <link rel="canonical" href="/contact.html" />
+  <meta name="theme-color" content="#0a2342" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 1.25rem; }
+    .contact-form { background: var(--white); border: 1px solid var(--gray-100); border-radius: 0.8rem; padding: 1rem; box-shadow: var(--shadow-sm); }
+    .contact-form label { display: block; font-weight: 600; margin-top: 0.75rem; }
+    .contact-form input, .contact-form textarea, .contact-form select { width: 100%; padding: 0.6rem 0.7rem; border: 1px solid var(--gray-300); border-radius: 0.5rem; font: inherit; }
+    .contact-form textarea { min-height: 130px; resize: vertical; }
+    .map { border: 1px solid var(--gray-100); border-radius: 0.8rem; overflow: hidden; box-shadow: var(--shadow-sm); }
+    @media (max-width: 960px) { .contact-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div>
+        <a data-link="phone" href="#"><strong>Call:</strong> <span data-text="phone">+91-9999999999</span></a>
+        &nbsp; | &nbsp;
+        <a data-link="email" href="#"><strong>Email:</strong> <span data-text="email">info@defenceacademy.example</span></a>
+      </div>
+      <div>
+        <a data-link="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        &nbsp;·&nbsp;
+        <a data-link="instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+        &nbsp;·&nbsp;
+        <a data-link="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/">
+        <span class="logo" aria-hidden="true"></span>
+        <span data-text="academyName">Defence Academy</span>
+      </a>
+      <nav id="primaryNav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="courses.html">Courses &amp; Fees</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog/News</a>
+        <a href="contact.html" aria-current="page">Contact Us</a>
+        <a class="btn btn-primary" data-link="whatsapp" href="#">Enroll Now</a>
+      </nav>
+      <button id="navToggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2>Get in Touch</h2>
+        <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="+91-XXXXXXXXXX" required />
+
+          <label for="course">Course of Interest</label>
+          <select id="course" name="course">
+            <option value="NDA">NDA</option>
+            <option value="CDS">CDS</option>
+            <option value="AFCAT">AFCAT</option>
+            <option value="SSB">SSB Interview</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message"></textarea>
+
+          <div style="margin-top: 1rem; display: flex; gap: 0.75rem;">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <a class="btn" data-link="whatsapp" href="#">Chat on WhatsApp</a>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h2>Visit Us</h2>
+        <p>
+          <strong><span data-text="academyName">Defence Academy</span></strong><br />
+          Defence Academy Campus, Near City Center<br />
+          New Delhi, 110001
+        </p>
+        <div class="map"><iframe id="mapFrame" src="" width="100%" height="340" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+        <p style="margin-top: 0.75rem;">
+          <a data-link="phone" href="#"><span data-text="phone">+91-9999999999</span></a><br />
+          <a data-link="email" href="#"><span data-text="email">info@defenceacademy.example</span></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div>
+        <h4><span data-text="academyName">Defence Academy</span></h4>
+        <p>Discipline. Determination. Destiny.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p>
+          <a href="about.html">About Us</a><br />
+          <a href="courses.html">Courses &amp; Fees</a><br />
+          <a href="gallery.html">Gallery</a><br />
+          <a href="blog.html">Blog/News</a><br />
+          <a href="contact.html">Contact Us</a>
+        </p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a data-link="phone" href="#"><span data-text="phone">+91-9999999999</span></a><br />
+        <a data-link="email" href="#"><span data-text="email">info@defenceacademy.example</span></a></p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p>
+          <a data-link="linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a><br />
+          <a data-link="instagram" href="#" target="_blank" rel="noopener">Instagram</a><br />
+          <a data-link="whatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> <span data-text="academyName">Defence Academy</span>. All rights reserved.</div>
+  </footer>
+
+  <a id="floating-whatsapp" class="floating-whatsapp" data-link="whatsapp" href="#" aria-label="Chat on WhatsApp"></a>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
